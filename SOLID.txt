@@ -1,0 +1,13 @@
+Os princípios SOLID são um conjunto de diretrizes de design de software que visam promover código limpo, flexível e sustentável. Eles foram introduzidos por Robert C. Martin e representam um acrônimo das seguintes palavras-chave: Single Responsibility Principle (Princípio da Responsabilidade Única), Open/Closed Principle (Princípio Aberto/Fechado), Liskov Substitution Principle (Princípio da Substituição de Liskov), Interface Segregation Principle (Princípio da Segregação de Interfaces) e Dependency Inversion Principle (Princípio da Inversão de Dependências).
+
+Princípio da Responsabilidade Única (SRP): Cada classe ou módulo deve ter apenas uma única responsabilidade, o que significa que ela deve ter apenas um motivo para mudar. Isso ajuda a manter o código coeso, facilitando a compreensão, manutenção e reutilização.
+
+Princípio Aberto/Fechado (OCP): As entidades de software, como classes, devem ser abertas para extensão, mas fechadas para modificação. Isso significa que você pode estender o comportamento de uma classe sem precisar alterar seu código existente, promovendo a escalabilidade e evitando efeitos colaterais indesejados.
+
+Princípio da Substituição de Liskov (LSP): Os objetos de uma classe derivada devem ser substituíveis pelos objetos da classe base sem afetar a correção do programa. Em outras palavras, as subclasses devem cumprir o contrato estabelecido pela classe base, garantindo que a herança seja usada corretamente e sem comportamentos inesperados.
+
+Princípio da Segregação de Interfaces (ISP): Os clientes não devem ser forçados a depender de interfaces que não usam. Em vez de criar interfaces monolíticas, é melhor criar interfaces específicas para os clientes que atendam às suas necessidades, evitando assim dependências desnecessárias.
+
+Princípio da Inversão de Dependências (DIP): As classes de alto nível não devem depender de classes de baixo nível; ambos devem depender de abstrações. Isso significa que a dependência deve ser invertida, tornando o código mais flexível, modular e facilitando a aplicação de injeção de dependência para desacoplar componentes.
+
+A aplicação correta dos princípios SOLID pode levar a um código mais limpo, flexível e fácil de manter, além de promover a reutilização de código e melhorar a escalabilidade de sistemas de software.
