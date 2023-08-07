@@ -3,6 +3,7 @@ import { Body, Controller, Get, Post } from '@nestjs/common';
 import { PrismaService } from './prisma.service';
 
 import { randomUUID } from 'node:crypto';
+import { CreateNotificationBody } from './create-notification-body';
 
 // inversão de dependências recebendo os paramêtros por um construtor
 @Controller('notifications')
@@ -16,7 +17,7 @@ export class AppController {
 
   // passando decorators como parâmetros
   @Post()
-  async create(@Body() body: any) {
+  async create(@Body() body: CreateNotificationBody) {
     const { recipientId, content, category } = body;
     await this.prismaService.notification.create({
       data: {
