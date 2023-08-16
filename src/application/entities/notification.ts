@@ -15,7 +15,7 @@ export class Notification {
   constructor(props: Replace<NotificationProps, { createdAt?: Date }>) {
     this.props = {
       ...props,
-      createdAt: this.createdAt ?? new Date(),
+      createdAt: props.createdAt ?? new Date(),
     };
   }
 
